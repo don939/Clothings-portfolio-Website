@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="images\stitch1619001478.ico">
+<title>Dr Stitches</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/nivo-lightbox.css">
+<link rel="stylesheet" href="css/nivo_themes/default/default.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+ 
+<style>
+  body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+
+}
+  
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: rgba(177, 14, 218, 0.952);
+  color: white;
+  transform: rotateY(180deg);
+}
+.ml9 {
+  position: relative;
+  font-weight: 20;
+  font-size: 1em;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(8, 5, 5);
+}
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(8, 5, 5);
+    padding: 2rem;
+}
+
+.navbar-links li:hover {
+    background-color: rgb(246, 240, 247);
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(8, 2, 2);
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 170%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+} 
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+
+<section id="home">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+
+        <h1 class="ml11">
+          <span class="text-wrapper">
+            <span class="line line1"></span>
+            <span class="letters" style="color:rgb(255, 255, 255)">Dr Stitches</span>
+          </span>
+        </h1>
+       
+        <h2 class="wow bounce">DESIGN STUDIO</h2>
+        <a href="#intro" class="btn btn-default smoothScroll">GET STARTED</a></div>
+    </div>
+  </div>
+</section>
+
+
+<nav class="navbar  navbar-default navbar-static-top navbar-fixed-top" >
+  <a href="index.html" class="navbar-brand">Dr Stitches</a></div>
+  <a href="#" class="toggle-button" >
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <div class="navbar-links">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#intro">INTRO</a></li>
+      <li><a href="#team">TEAM</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 title">
+        <h4 style="color: black;">WELCOME TO </h4>
+        <h3 style="color: black;"> Dr Stitches Branding &amp; Fashion Studio</h3>
+        <hr>
+        <p style="color: black;">FASHION ¤ STYLE ¤ CREATIVITY.
+          Mens Native, Native caps, Suits, Trousers, Fabrics and Fashion accessories..</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="team">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
+        <h2>Our Team</h2>
+        <hr>
+        <p>The creators of future wears.</p>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="0.9s"><img src="images/3.jpg" class="img-responsive" alt="team img" style="width: fit-content;">
+        <div class="team-des">
+          <h4>Fattaih </h4>
+          <h3>Designer</h3>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="1.3s"><img src="images/4.jpg" class="img-responsive" alt="team img" style="width: fit-content;">
+        <div class="team-des">
+          <h4>Zainab</h4>
+          <h3>Manager</h3>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-6 wow fadeIn" data-wow-delay="1.6s"><img src="images/1.jpg" class="img-responsive" alt="team img" style="width: fit-content;">
+        <div class="team-des">
+          <h4>Fuad</h4>
+          <h3>Developer</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+          
+     
+      
+
+<div id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8 title">
+        <h2>Portfolio</h2>
+        <hr>
+        <h1 class="ml9">
+          <span class="text-wrapper">
+            <span class="letters" style="color: black;">Dr stitches clothier provides services in Men's native and English wears, fabric and fashion accessories sales. Our services
+              are luxurious yet affordable for all. We deliver based on your prefrences and style.</span>
+          </span>
+        </h1>
+      </div>
+      <div class="col-md-12 col-sm-12"></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images\SAVE_20200808_181917.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images\SAVE_20200808_181917.jpg" alt="portfolio img"></a></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images/SAVE_20200808_182204.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/SAVE_20200808_182204.jpg" alt="portfolio img"></a></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images/SAVE_20200808_182138.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/SAVE_20200808_182138.jpg" alt="portfolio img"></a></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images/g.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/g.jpg" alt="portfolio img"></a></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images/20210421_181953.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/20210421_181953.jpg" alt="portfolio img"></a></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images/20210421_181940.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/20210421_181940.jpg" alt="portfolio img"></a></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images/20210421_181926.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/20210421_181926.jpg" alt="portfolio img"></a></div>
+      <div class="col-md-3 col-sm-3 wow fadeIn" data-wow-delay="0.6s"><a href="images/20210421_181843.jpg" data-lightbox-gallery="portfolio-gallery"><img src="images/20210421_181843.jpg" alt="portfolio img"></a></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- contact section -->
+<section id="contact" class="contact">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>Contact</h2>
+      <p  style="color: black;">You can use the following information to contact us</p>
+    </div>
+
+    <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="info-box">
+             <img src="https://img.icons8.com/windows/64/000000/marker.png"/>
+              <h3 style="color: black;">Our Address</h3> 
+              <p  style="color: black;">1-5 Oba Akinjobi way,Ikeja,Lagos.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box mt-4">
+       <img src="https://img.icons8.com/windows/32/000000/database-mail--v2.png"/>
+              <h3  style="color: black;"> Email Us</h3>
+              <p  style="color: black;">contact.drstitches@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-box mt-4">
+              <img src="https://img.icons8.com/windows/32/000000/phone.png"/>
+              <h3  style="color: black;">Call Us</h3>
+              <p  style="color: black;">+234 909 388 8119</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6">
+        <form action="mailto:Fogunlola2004@gmail.com" method="post">
+          <input type="text" class="form-control" placeholder="Name">
+          <input type="email" class="form-control" placeholder="Email">
+          <textarea class="form-control" placeholder="Message" rows="6"></textarea>
+       <input type="submit" class="form-control" value="SEND EMAIL">
+        
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Contact Section -->
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <h2 class="wow fadeIn" data-wow-delay="0.9s">Follow Us</h2>
+        <ul class="social-icon">
+          <li><a href="https://www.instagram.com/dr.stitches_/" class="fa fa-instagram wow bounceIn" data-wow-delay="0.6s"></a></li>
+
+        </ul>
+      </div>
+      <div class="col-md-12 col-sm-12 copyright">
+        <p>Copyright © 2021  <a target="_blank" rel="nofollow" href="index.html">Dr Stitches</a> </p>
+       
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+ // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml11 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml11 .line',
+    scaleY: [0,1],
+    opacity: [0.5,1],
+    easing: "easeOutExpo",
+    duration: 700
+  })
+  .add({
+    targets: '.ml11 .line',
+    translateX: [0, document.querySelector('.ml11 .letters').getBoundingClientRect().width + 10],
+    easing: "easeOutExpo",
+    duration: 700,
+    delay: 100
+  }).add({
+    targets: '.ml11 .letter',
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 600,
+    offset: '-=775',
+    delay: (el, i) => 34 * (i+1)
+  }).add({
+    targets: '.ml11',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+
+  <script>
+    // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml9 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml9 .letter',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.ml9',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+  </script>
+  <script>
+  const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
+</script>
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/nivo-lightbox.min.js"></script> 
+<script src="js/smoothscroll.js"></script> 
+<script src="js/jquery.sticky.js"></script> 
+<script src="js/jquery.parallax.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script src="js/custom.js"></script>
+   <script src="app1.js"></script>
+    <script src="particles.js"></script>
+</body>
+</html>
